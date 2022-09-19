@@ -24,7 +24,7 @@
   margin-right: 70px;
 }
 
-.address-mail {
+.address-mail,
 .address-phone {
   font-family: var(--primary-font);
   font-weight: 400;
@@ -35,23 +35,15 @@
   margin-top: 9px;
   color: var(--mail-links-color);
  }
-}
 
-.mail-links {
+.mail-links
 .phone-links {
   transition: var(--transition-dur-and-func);
-
-
-&:hover,
-&:focus {
-  color: var(--address-color);
-}
   
 &:hover,
 &:focus {
   color: var(--address-color);
  }
-}
 }
 
 .address-icon {
@@ -87,10 +79,17 @@
  &:hover,
  &:focus {
   background-color: var(--address-color);
+ }
 }
 
- &:hover .social-list-icon,
- &:focus .social-list-icon {
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-list-color);
+  transition: fill var(--transition-dur-and-func);
+
+.address-social-list-link:hover &,
+.address-social-list-link:focus & {
   fill: var(--title-text-color);
  }
 }
@@ -100,4 +99,4 @@
   height: 20px;
   fill: var(--title-text-color);
   transition: var(--transition-dur-and-func);
-}
+ }

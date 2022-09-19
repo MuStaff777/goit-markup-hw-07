@@ -36,9 +36,9 @@
   background-color: var(--title-text-color);
 }
 
- &:hover  .image-clients,
- &:focus  .image-clients {
-  fill: var(--address-color);
+&:hover  .image-clients,
+&:focus  .image-clients {
+ fill: var(--address-color);
 }
 
  &:hover, 
