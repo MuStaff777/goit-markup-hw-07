@@ -1,29 +1,28 @@
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--title-text-color);
 }
 
 .clients-section {
   margin-bottom: 50px;
 }
 
-.image-clients {
+.image__clients {
   width: 106px;
   height: 60px;
   fill: var(--social-list-color);
   transition: var(--transition-dur-and-func);
 }
 
-.clients-container {
+.clients__container {
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
 }
 
-.clients-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.clients__list {
+ @extend %align;
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-list-color);
@@ -36,8 +35,8 @@
   background-color: var(--title-text-color);
 }
 
-&:hover  .image-clients,
-&:focus  .image-clients {
+&:hover  .image__clients,
+&:focus  .image__clients {
  fill: var(--address-color);
 }
 

@@ -1,9 +1,18 @@
+.contacts {
+  list-style: none;
+}
+
+.menu-site,
+.contact-phone-number,
+.menu__link.item,
+.logo {
+  text-decoration: none;
+}
+
 .page-logo, 
 .address-logo {
+  @include font (26px, 700, 31px);
   font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--address-color);
 }
@@ -11,10 +20,8 @@
     
 .page-list, 
 .address-item {
+  @include font (26px, 700, 31px);
     font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--secondary-title-color);
 }
@@ -22,12 +29,11 @@
 .page-header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
 }  
     
 .page-header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @extend %align;
 }
     
 .page-navigation {
@@ -40,15 +46,13 @@
   column-gap: 50px;
 }
     
-.logo {
+.page-navigation__logo {
   margin-right: 93px;
 }
     
-.menu-link.link {
+.menu__link.link {
+  @include font (14px, 500, 16px);
   font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -61,11 +65,9 @@
  } 
 }
     
-.menu-link.item {
+.menu__link.item {
+  @include font (14px, 500, 16px);
   font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -91,38 +93,7 @@
   transition: opacity var(--transition-dur-and-func);
  } 
 }
-  
-.menu-site {
-  margin-left: auto;
-  margin-right: 30px;
-}
-
-.menu-site {
-  display: flex;
-  align-items: center;
-  font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--menu-site-color);
-  transition: color var(--transition-dur-and-func);
-
-
-.message:hover  &,
-.message:focus  & {
-  fill: var(--address-color);
- }
-}   
-
-.message,
-.smartphone {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: var(--menu-site-color);
-}
-
+ 
 .contacts {
   display: flex;
   margin-left: auto;
@@ -132,20 +103,52 @@
   fill: var(--address-color);
   }
 }
-           
-.contact-phone-number {
+
+.menu-site {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.menu-site {
+  @include font (14px, 500, 16px);
   display: flex;
   align-items: center;
   font-family: var(--primary-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--menu-site-color);
+  transition: color var(--transition-dur-and-func);
+
+
+&:hover, 
+&:focus  {
+  fill: var(--address-color);
+ }
+}   
+
+.message__icon,
+.smartphone__icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--menu-site-color);
+
+
+&:hover .smartphone__icon,
+&:focus .smartphone__icon {
+  fill: var(--address-color);
+ }
+}
+.contact-phone-number {
+  @include font (14px, 500, 16px);
+  display: flex;
+  align-items: center;
+  font-family: var(--primary-font);
   letter-spacing: 0.02em;
   color: var(--menu-site-color);
   transition: color var(--transition-dur-and-func);
     
-&:hover .smartphone,
-&:focus .smartphone{
+&:hover, 
+&:focus  {
   fill: var(--address-color);
   }
 }

@@ -1,26 +1,27 @@
+.section-list-container {
+  list-style: none;
+}
+
 .section-work.section {
     padding-bottom: 94px;
     margin-top: auto;
   }
   
-  .applications {
+  .list__applications-list {
     position: relative;
   }
   
-  .image-section {
+  .image__section {
     display: block;
     max-width: 100%;
     height: auto;
   }
   
-  .text-applications {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .text-applications__text {
+    @include font (14px, 700, 16px);
+    @extend %align;
     position: absolute;
     font-family: var(--primary-font);
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.03em;
     width: 370px;
     height: 70px;

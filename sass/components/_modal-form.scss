@@ -1,9 +1,8 @@
 .modal-form-title {
+  @include font (20px, 700, 23px);
   display: block;
   font-family: var(--primary-font);
   text-align: center;
-  font-size: 20px;
-  line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
@@ -14,11 +13,9 @@
 }
 
 .modal-form-field-desc {
+  @include font (12px, 400, 14px);
   display: block;
   font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--menu-site-color);
   margin-top: 10px;
@@ -65,13 +62,11 @@
 }
 
 .modal-form-message {
+  @include font (12px, 400, 14px);
   display: block;
   width: 100%;
   height: 120px;
   font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
   letter-spacing: 0.01em;
   border-radius: 4px;
   border: 1px solid var(--modal-form-color);
@@ -90,9 +85,7 @@
 }
 
 .modal-form-check-field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ @extend %align;
   margin-top: 20px;
 }
 
@@ -128,29 +121,23 @@
 } 
 
 .modal-form-desc {
+  @include font (14px, 400, 24px);
   display: flex;
   font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.01em;
   color: var(--menu-site-color);
 }
 
 .modal-form-check-link {
+  @include font (14px, 400, 24px);
   font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.01em;
   color: var(--address-color);
 }
 
 .modal-form-submit {
-  font-weight: 700;
+  @include font (16px, 700, 30px);
   align-self: center;
-  font-size: 16px;
-  line-height: 1.8;
   letter-spacing: 0.06em;
   background-color: var(--form-icon-color);
   border: none;

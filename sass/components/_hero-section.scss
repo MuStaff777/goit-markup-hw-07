@@ -3,7 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: var(--hero-address-color);
+    background-color:  var(--hero-address-color);
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/link/tadam/img.jpg);
@@ -11,9 +11,7 @@
   }
   
   .hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    Line-height: 1.4;
+    @include font (44px, 900, 60px);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -24,9 +22,7 @@
   }
   
   .button.primary {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
+    @include font (16px, 700, 30px);
     letter-spacing: 0.06em;
     background-color: var(--address-color);
     border: none;
