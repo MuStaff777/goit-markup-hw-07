@@ -359,10 +359,11 @@ body {
   font-family: var(--primary-font);
   letter-spacing: 0.02em;
   color: var(--menu-site-color);
+  fill: currentColor;
   transition: color var(--transition-dur-and-func);
 }
 .menu-site:hover, .menu-site:focus {
-  fill: var(--address-color);
+  color: var(--address-color);
 }
 
 .message__icon,
@@ -370,12 +371,13 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--menu-site-color);
+  fill: currentColor;
+  transition: color var(--transition-dur-and-func);
 }
 .message__icon:hover .smartphone__icon, .message__icon:focus .smartphone__icon,
 .smartphone__icon:hover .smartphone__icon,
 .smartphone__icon:focus .smartphone__icon {
-  fill: var(--address-color);
+  color: var(--address-color);
 }
 
 .contact-phone-number {
@@ -387,10 +389,11 @@ body {
   font-family: var(--primary-font);
   letter-spacing: 0.02em;
   color: var(--menu-site-color);
+  fill: currentColor;
   transition: color var(--transition-dur-and-func);
 }
 .contact-phone-number:hover, .contact-phone-number:focus {
-  fill: var(--address-color);
+  color: var(--address-color);
 }
 
 .address-logo {

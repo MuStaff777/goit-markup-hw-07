@@ -116,12 +116,13 @@
   font-family: var(--primary-font);
   letter-spacing: 0.02em;
   color: var(--menu-site-color);
+  fill: currentColor;
   transition: color var(--transition-dur-and-func);
 
 
 &:hover, 
 &:focus  {
-  fill: var(--address-color);
+  color: var(--address-color);
  }
 }   
 
@@ -130,14 +131,15 @@
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--menu-site-color);
-
-
-&:hover .smartphone__icon,
-&:focus .smartphone__icon {
-  fill: var(--address-color);
+  fill: currentColor;
+  transition: color var(--transition-dur-and-func);
+ 
+&:hover  .smartphone__icon,
+&:focus  .smartphone__icon{
+  color: var(--address-color);
  }
 }
+
 .contact-phone-number {
   @include font (14px, 500, 16px);
   display: flex;
@@ -145,11 +147,12 @@
   font-family: var(--primary-font);
   letter-spacing: 0.02em;
   color: var(--menu-site-color);
+  fill: currentColor;
   transition: color var(--transition-dur-and-func);
     
 &:hover, 
 &:focus  {
-  fill: var(--address-color);
+  color: var(--address-color);
   }
 }
-    
+  
